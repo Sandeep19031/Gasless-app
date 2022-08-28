@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/Example.sol": {
+      "content": "pragma solidity ^0.8.3;\r\n\r\n/*\r\n\r\n  This is just a very simple example contract used to demonstrate the BouncerProxy making calls to it\r\n\r\n*/\r\n\r\ncontract Example {\r\n    uint256 public count;\r\n\r\n    constructor() {\r\n        count = 0;\r\n    }\r\n\r\n    //it keeps a count to demonstrate stage changes\r\n\r\n    //it can receive funds\r\n\r\n    //and it can add to a count\r\n    function addAmount(uint256 amount) public returns (bool) {\r\n        count = count + amount;\r\n        return true;\r\n    }\r\n}\r\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

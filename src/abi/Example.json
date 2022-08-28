@@ -1,0 +1,109 @@
+{
+  "address": "0x0433c042E1eB4d836CE85099c1D13272A8040cf2",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "addAmount",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "count",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x2918cfc28bfd070603dc82d5818ee1f21d4c3723472a743806ebfb3ce486804e",
+  "receipt": {
+    "to": null,
+    "from": "0xffd3452eFa0eda06F8F1F7e2442C3E075905AE3e",
+    "contractAddress": "0x0433c042E1eB4d836CE85099c1D13272A8040cf2",
+    "transactionIndex": 4,
+    "gasUsed": "174305",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000000000000100000000004000000000000000000000000000000000000000000000000080000100000000000000000000000000000000000000000000000000000080000000000000000000200000000000000000000000000000000000000000000000000400000000004000000000000000000001000000000000000000000000000000100040000000000000000000000000000000000000000000000000000000000000000000100000",
+    "blockHash": "0xb27e939f2a078ea83a66be94e06d52fee45b38842d9aa3fc649a14dbbefece04",
+    "transactionHash": "0x2918cfc28bfd070603dc82d5818ee1f21d4c3723472a743806ebfb3ce486804e",
+    "logs": [
+      {
+        "transactionIndex": 4,
+        "blockNumber": 27801928,
+        "transactionHash": "0x2918cfc28bfd070603dc82d5818ee1f21d4c3723472a743806ebfb3ce486804e",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x000000000000000000000000ffd3452efa0eda06f8f1f7e2442c3e075905ae3e",
+          "0x000000000000000000000000be188d6641e8b680743a4815dfa0f6208038960f"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000240a6a576cfe400000000000000000000000000000000000000000000000002c48648d1e6d84a0000000000000000000000000000000000000000000024a34379431a7760681000000000000000000000000000000000000000000000000002c245a22c7008660000000000000000000000000000000000000000000024a3437b83c11cd737f4",
+        "logIndex": 19,
+        "blockHash": "0xb27e939f2a078ea83a66be94e06d52fee45b38842d9aa3fc649a14dbbefece04"
+      }
+    ],
+    "blockNumber": 27801928,
+    "cumulativeGasUsed": "1340606",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "522a5570be4d5e9d93a7190b817f28d0",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"addAmount\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"count\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Example.sol\":\"Example\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Example.sol\":{\"content\":\"pragma solidity ^0.8.3;\\r\\n\\r\\n/*\\r\\n\\r\\n  This is just a very simple example contract used to demonstrate the BouncerProxy making calls to it\\r\\n\\r\\n*/\\r\\n\\r\\ncontract Example {\\r\\n    uint256 public count;\\r\\n\\r\\n    constructor() {\\r\\n        count = 0;\\r\\n    }\\r\\n\\r\\n    //it keeps a count to demonstrate stage changes\\r\\n\\r\\n    //it can receive funds\\r\\n\\r\\n    //and it can add to a count\\r\\n    function addAmount(uint256 amount) public returns (bool) {\\r\\n        count = count + amount;\\r\\n        return true;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xe6a6f5293c0e79a155847f08b93d133ae32fd194cbd7da96e7f7506e4e08580f\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060008081905550610228806100276000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806306661abd1461003b5780630912f23214610059575b600080fd5b610043610089565b6040516100509190610125565b60405180910390f35b610073600480360381019061006e91906100c3565b61008f565b604051610080919061010a565b60405180910390f35b60005481565b60008160005461009f9190610140565b60008190555060019050919050565b6000813590506100bd816101db565b92915050565b6000602082840312156100d557600080fd5b60006100e3848285016100ae565b91505092915050565b6100f581610196565b82525050565b610104816101a2565b82525050565b600060208201905061011f60008301846100ec565b92915050565b600060208201905061013a60008301846100fb565b92915050565b600061014b826101a2565b9150610156836101a2565b9250827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0382111561018b5761018a6101ac565b5b828201905092915050565b60008115159050919050565b6000819050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6101e4816101a2565b81146101ef57600080fd5b5056fea26469706673582212204d13fdcda7c880d6f7e03f86ae0b019e9e7feb3b0a96a2ff7ac6cf184f29fce964736f6c63430008030033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806306661abd1461003b5780630912f23214610059575b600080fd5b610043610089565b6040516100509190610125565b60405180910390f35b610073600480360381019061006e91906100c3565b61008f565b604051610080919061010a565b60405180910390f35b60005481565b60008160005461009f9190610140565b60008190555060019050919050565b6000813590506100bd816101db565b92915050565b6000602082840312156100d557600080fd5b60006100e3848285016100ae565b91505092915050565b6100f581610196565b82525050565b610104816101a2565b82525050565b600060208201905061011f60008301846100ec565b92915050565b600060208201905061013a60008301846100fb565b92915050565b600061014b826101a2565b9150610156836101a2565b9250827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0382111561018b5761018a6101ac565b5b828201905092915050565b60008115159050919050565b6000819050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6101e4816101a2565b81146101ef57600080fd5b5056fea26469706673582212204d13fdcda7c880d6f7e03f86ae0b019e9e7feb3b0a96a2ff7ac6cf184f29fce964736f6c63430008030033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/Example.sol:Example",
+        "label": "count",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
