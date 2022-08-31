@@ -8,11 +8,11 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   } = hre;
   const { deployer } = await getNamedAccounts();
 
-  await deploy('Example', {
+  await deploy('BouncerProxy', {
     from: deployer,
     log: true,
   });
 };
 
 export default func;
-func.tags = ['Example'];
+func.tags = ['BouncerProxy'];

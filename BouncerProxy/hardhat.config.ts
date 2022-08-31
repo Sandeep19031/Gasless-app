@@ -9,12 +9,12 @@ import { HardhatUserConfig } from 'hardhat/config';
 const { DEPLOYER_PRIVATE_KEY, INFURA_PROJECT_ID } = process.env;
 
 const config: HardhatUserConfig = {
-  solidity: '0.8.3',
+  solidity: '0.8.0',
   networks: {
     
     matic: {
-        url: "https://polygon-mumbai.g.alchemy.com/v2/yEtySVnwd19tmoeS57RT9a6RkGEBQoGR",
-        accounts: ["0xaece8d8da9a28335c29cd164d8c01ce0cbe0bcd0b0f7c4f1ca705e94bcf04b04"]
+        url: "https://polygon-mumbai.g.alchemy.com/v2/v_Z8QruJ0ttOvj4oGucfgvCtomT1lYOj",
+        accounts: ["0x5df0643fb0a194644d5bf6148d3ef809e4904e22408c362a853cc4553ff40d7e"]
     }
   },
   namedAccounts: {
